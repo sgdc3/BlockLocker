@@ -232,7 +232,7 @@ public final class InteractListener extends EventListener {
      * @param event
      *            The event object.
      */
-    @EventHandler(ignoreCancelled = true)
+    @EventHandler(ignoreCancelled = false)
     public void onPlayerInteract(PlayerInteractEvent event) {
         if (event.getAction() != Action.RIGHT_CLICK_BLOCK) {
             return;
